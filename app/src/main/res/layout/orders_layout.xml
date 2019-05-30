@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/order_user_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/order_phone_no"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:text="Phone No"
+            android:textAlignment="viewEnd"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/order_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Price:"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_below="@id/order_phone_no"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/show_all_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_total_price"
+            android:layout_margin="15dp"
+            android:background="@android:color/white"
+            android:text="Show this order product"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
